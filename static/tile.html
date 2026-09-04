@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <title>MINESWEEPER</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="phone">
+  <header class="bar">
+    <div class="brand">
+      <span class="mark"></span>
+      <span class="title">MINESWEEPER</span>
+    </div>
+    <span class="dim" id="tile-id">TILE —</span>
+  </header>
+
+  <main class="result" id="result">
+    <div class="coord" id="coord">&nbsp;</div>
+    <div class="big word" id="big">…</div>
+    <div class="msg" id="msg">LOADING</div>
+    <div class="actions" id="actions" hidden>
+      <button class="btn primary" id="btn-reveal">REVEAL</button>
+      <button class="btn" id="btn-flag">FLAG</button>
+    </div>
+    <button class="btn" id="btn-reset" hidden>NEW GAME</button>
+  </main>
+
+  <footer class="bar foot">
+    <span class="dim">LOOK AT THE WALL</span>
+    <span class="dim" id="status">&nbsp;</span>
+  </footer>
+
+  <script src="/static/tile.js"></script>
+</body>
+</html>
